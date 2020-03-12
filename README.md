@@ -38,7 +38,7 @@ Since ClinicalTrials.gov records do not have consistent numerical data across al
 ### Dataset
 The entire dataset was downloaded from ClinicalTrials.gov through their API at [https://clinicaltrials.gov/api/gui](https://clinicaltrials.gov/api/gui). As of February 11, 2020, the total number of records in the database was 329,957. The records were in JSON format which were challenging to handle due to my limited experience with JSON files. The files were stored in 427 folders, separated by the first four digits of their record number (example: "NCT0000xxxx"). The hardest aspect of the project might simply have been figuring out how to extract all of the records and combining them into one dictionary. Once the code was sorted, it took approximately 30 minutes for all the JSON files to be compiled into one.
 
-Due to size of the data, it was suggested to initially work with a smaller dataset for efficiency and then the entire dataset later on. I chose to start with one folder, NCT0426xxxx, which held 575 records. This proved to be a wise strategy and since  manipulations were able to be executed much faster. I started by creating and modifying code for this smaller dataset.
+Due to size of the data, it was suggested to initially work with a smaller dataset for efficiency and then the entire dataset later on. I chose to start with one folder, NCT0426xxxx, which held 575 records. This proved to be a wise strategy since manipulations were able to be executed much faster. I started by creating and modifying code for this smaller dataset.
 
 
 ### EDA
@@ -93,7 +93,7 @@ Next, neural networks were employed to see if they could improve on logistic reg
 
 | Parameters |Train score  |Test score  |
 |--|--|--|
-|1 hidden layer, 1024 units, 10 epochs, batch size of 512|0.993  | 0.8680|
+|1 hidden layer, 1024 units, 10 epochs, batch size of 512|0.9936  | 0.8680|
 |1 hidden layer, 18 units, 5 epochs, batch size of 512|0.9147  |0.8683|
 |2 hidden layers, 18 units, 5 epochs, batch size of 512|0.9165  |0.8671|
 
